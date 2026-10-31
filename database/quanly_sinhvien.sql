@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.2
+-- version 5.2.3
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th10 05, 2025 lúc 01:02 PM
--- Phiên bản máy phục vụ: 11.8.3-MariaDB-log
--- Phiên bản PHP: 7.2.34
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th10 31, 2026 lúc 08:02 AM
+-- Phiên bản máy phục vụ: 10.11.16-MariaDB
+-- Phiên bản PHP: 8.3.36
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -95,7 +95,7 @@ CREATE TABLE `quan_tri_vien` (
 --
 
 INSERT INTO `quan_tri_vien` (`id`, `username`, `password`, `hoten`, `email`, `last_login`) VALUES
-(1, 'lhvinh', '$2y$10$cmrbljNUuAaFt2/srStwGO4JjZj9K7j9XqR8FLB5WbFc9Fi0rnc2q', 'Lê Hữu Vinh', 'lhvinh@caothang.edu.vn', '2025-11-05 12:55:07');
+(1, 'lhvinh', '$2y$10$cmrbljNUuAaFt2/srStwGO4JjZj9K7j9XqR8FLB5WbFc9Fi0rnc2q', 'Lê Hữu Vinh', 'lhvinh@caothang.edu.vn', '2026-10-31 12:04:03');
 
 -- --------------------------------------------------------
 
@@ -122,7 +122,8 @@ CREATE TABLE `sinh_vien` (
 --
 
 INSERT INTO `sinh_vien` (`mssv`, `hoten`, `ngaysinh`, `gioitinh`, `malop`, `makhoa`, `email`, `sdt`, `diachi`, `password`, `trangthai`) VALUES
-('2312401001', 'Nguyễn Văn An', '2005-03-12', 'Nam', 'CNTT23A', 'CNTT', '2312401001@ct.edu.vn', '0901234567', 'TP. Huế', '$2y$10$HS8by4lYLuFtbAFq.28SC.ASYxbHQ5fCqlxULkKekOLOy5szj/b6e', 'Đang học'),
+('0306251176', 'Nguyễn Gia Hưng', '2007-10-11', 'Nam', 'CNTT23C', 'CNTT', '0306251176@caothang.edu.vn', '0335280731', 'TP. HCM', '$2y$10$BZQJYIkTi4W43aNIMH9vWOMXfNUC0M4AWGQTUCL1.g0/soZgpsWMa', 'Đang học'),
+('2312401001', 'Nguyễn Văn An', '2005-07-14', 'Nam', 'CNTT23C', 'CNTT', '0306251176@ct.edu.vn', '0901234567', 'TP. HCM', '$2y$10$HS8by4lYLuFtbAFq.28SC.ASYxbHQ5fCqlxULkKekOLOy5szj/b6e', 'Đang học'),
 ('2312401002', 'Trần Thị Bình', '2005-06-20', 'Nữ', 'CNTT23A', 'CNTT', '2312401002@ct.edu.vn', '0902345678', 'TP. Đà Nẵng', '$2y$10$TKh8H1.PxfwTtYvEV/0y2O7n4eGcEJ7n2Mn6KZbXAbQW2ShpXQa6K', 'Đang học'),
 ('2312401003', 'Lê Văn Cường', '2004-09-10', 'Nam', 'CNTT23A', 'CNTT', '2312401003@ct.edu.vn', '0903456789', 'Quảng Trị', '$2y$10$TKh8H1.PxfwTtYvEV/0y2O7n4eGcEJ7n2Mn6KZbXAbQW2ShpXQa6K', 'Đang học'),
 ('2312401004', 'Phạm Thị Dung', '2005-02-17', 'Nữ', 'CNTT23A', 'CNTT', '2312401004@ct.edu.vn', '0904567890', 'TP. Hồ Chí Minh', '$2y$10$TKh8H1.PxfwTtYvEV/0y2O7n4eGcEJ7n2Mn6KZbXAbQW2ShpXQa6K', 'Đang học'),
